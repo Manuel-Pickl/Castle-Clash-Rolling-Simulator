@@ -1,0 +1,978 @@
+body {
+	margin: 0;
+	background: black;
+    background-size: cover;
+}
+
+/* to include outline/border/paddding/content in width */
+* {
+	box-sizing: border-box;
+	cursor: default;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+
+}
+
+#all {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+#all1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* streching background image for ccWindow */
+.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.backgroundDarkener {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.75;
+}
+.frameRoll {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* background image outside of ccWindow */
+.placeholder {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.placeholderTop {top: 0%}
+.placeholderBottom {bottom: 0%}
+.placeholderLeft {left: 0%}
+.placeholderRight {right: 0%}
+
+
+
+/* position of roll boxes */
+.rollBox {
+	position: absolute;
+	top: 17.4%;
+	height: 56.5%;
+	width: 27%;
+} 
+.rollBox1 {left: 10.7%}
+.rollBox2 {left: 37.4%}
+.rollBox3 {right: 8.3%}
+
+.rollBoxBackground {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* classes for the z-index of every element */
+.placeholderZIndex {z-index: -24}
+.backgroundZIndex {z-index: -23}
+.backgroundDarkenerZIndex {z-index: -22}
+.frameRollZIndex {z-index: -21}
+.rollBoxZIndex {z-index: -19}
+.rollBoxBackgroundZIndex {z-index: -18}
+.purpleLightZIndex {z-index: -17}
+.LightStarsZIndex {z-index: -16}
+.LightRingZIndex {z-index: -15}
+.rollBoxRingZIndex {z-index: -14}
+.purpleLightBarZIndex {z-index: -13}
+.heroPicZIndex {z-index: -12}
+.lightZIndex {z-index: -11}
+.lightStripesZIndex {z-index: -10}
+.rollBoxFlagZIndex {z-index: -9}
+.heroNameZIndex {z-index: -8}
+.purpleLightCircleZIndex {z-index: -7}
+.purpleLightStarsZIndex {z-index: -6}
+
+.counterTagZIndex {z-index: -5}
+
+#all1 {z-index: -10}
+.storageFlagZIndex {z-index: -19}
+.storageShineZIndex {z-index: -18}
+.storageLabelZIndex {z-index: -17}
+.storageHeroCardZIndex {z-index: -16}
+.storageboxNumberZIndex {z-index: -15}
+.storageHeroZIndex {z-index: -14}
+.storageHeroTagZIndex {z-index: -13}
+.storageHeroPicZIndex {z-index: -11}
+.storageHeroFlagZIndex {z-index: -9}
+.storageHeroNameZIndex {z-index: -7}
+.storageHeroEvolutionZIndex {z-index: -6}
+
+.rollAutoRollPicZIndex {z-index: -9}
+
+.imageOverlayZIndex {z-index: -1}
+/* - - - - - - - - - - - - - - - - - - - - */
+.heroName {
+	position: absolute;
+	bottom: 28.9%;
+	left: 17%;
+	width: 27%;
+	color: white;
+	text-align: center;
+	font-size: 33px;
+	text-shadow: 0px 0px 1px white, 0px 0px 2px white, 0px 0px 3px white, -1.7px 0 1px black, 0 2px 1px black, 1.5px 0 1px black, 0 -1.5px 1px black;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.heroName1 {left: 10.1%}
+.heroName2 {left: 36.8%}
+.heroName3 {left: 64.2%}
+
+.rollBoxFlag {
+	position: absolute;
+	bottom: 25.25%;
+	width: 26.9%;
+	height: 57%;
+	opacity: 0;
+}
+
+.rollBoxFlag1 {left: 10.5%}
+.rollBoxFlag2 {left: 37.3%}
+.rollBoxFlag3 {right: 8.5%}
+/* - - - - - - - - - - - - - - - - - - - - */
+ 
+.LightRing {
+	position: absolute;
+	height: 65%;
+	width: 105%;
+	border: solid red 0px;
+	border-radius: 45% 45% 0 0;
+	bottom: 13%;
+	left: 50%;
+	transform: translate(-50.5%,0%);
+	overflow: hidden;
+}
+
+.LightRingPic {
+	position: absolute;
+	height: 130%;
+	width: 100%;
+	bottom: -30%;
+	opacity: 0;
+}
+
+/* gem roll button */
+.rollButton {
+	position: absolute;
+	bottom: 6%;
+	width: 22.3%;
+	height: 21%;
+	clip-path: polygon(42% 0, 58% 0, 58% 25%, 100% 42%, 100% 100%, 0 100%, 0 42%, 42% 25%);
+}
+.rollButton1 {
+	left: 33.8%;
+	transform: translate(-50%,0%);
+}
+.rollButton2 {
+	right: 28.5%;
+	transform: translate(50%,0%);
+}
+.rollButtonImage {
+	position: absolute;
+	left: 50%;
+	bottom: -3%;
+	transform: translate(-50%,0%);
+	width: 107.5%;
+	height: 100%;
+}
+
+.heroPic {
+	position: absolute;
+	bottom: 3.5%;
+	width: 94%;
+	height: 89%;
+	opacity: 0;
+}
+
+.LightStars {
+	position: absolute;
+	height: auto;
+	opacity: 0;
+}
+
+.purpleLightBar {
+	position: absolute;
+	opacity: 0;
+}
+
+.storage {
+	position: absolute;
+	left: 4%;
+	bottom: 5.5%;
+	width: 61.3%;
+	height: 77%;
+	overflow-y: scroll;
+}
+.storage1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.storagebox {
+	position: relative;
+	width: 20%;
+	height: 24%;
+	float: left;
+}
+.storageboxFake2 {
+	background-color:transparent;
+	outline: none;
+	border: none;	
+}
+.storageHeroCard {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 86%;
+}
+.storageLabel {
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	width: 100%;
+	height: 86%;
+}
+.storageboxNumber {
+	position: absolute;
+	bottom: 3.5%;
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.storageFlagTag {
+	position: absolute;
+	top: 0%;
+	width: 16.3%;
+	height: 16.9%;
+	
+}
+.storageFlag {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.storageFlagTag1 {left: 2.5%}
+.storageFlagTag2 {left: 20.15%}
+.storageFlagTag3 {left: 37.8%}
+.storageFlagTag4 {left: 55.45%}
+.storageFlagTag5 {left: 73.1%}
+
+.storageFlagName {
+	position: absolute;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	text-shadow: 0px 0px 1px white, 0px 0px 2px white, 0px 0px 3px white, -1.7px 0 1px black, 0 2px 1px black, 1.5px 0 1px black, 0 -1.5px 1px black;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.storageFlagSmallName {
+	bottom: 55%;
+}
+.storageFlagBigName {
+	opacity: 0;
+	bottom: 23%;
+}
+.storageHero {
+	position: absolute;
+	left: 67%;
+	bottom: 8.35%;
+	width: 28%;
+	height: 71%;
+	opacity: 0;
+}
+.storageHeroPic {
+	position: absolute;
+	left: 0%;
+	bottom: 30.5%;
+	width: 100%;
+	height: 67.7%;
+}
+.storageHeroFlag {
+	position: absolute;
+	left: 0%;
+	top: 67.7%;
+	width: 100%;
+	height: 10.9%;
+}
+.storageHeroTag {
+	position: absolute;
+	left: 5.7%;
+	top: 73%;
+	width: 88%;
+	height: 36%;
+}
+.storageHeroName {
+	position: absolute;
+	bottom: 25.5%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	width: auto;
+	white-space: nowrap;
+	height: 5%;
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.storageHeroSkill {
+	position: absolute;
+	left: 32.5%;
+	top: 78%;
+	width: 35%;
+	height: 19%;
+}
+.storageHeroEvolution {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	height: 170%;
+	width: 100%;
+	transform: translate(-100%,-50%);
+}
+.storageHeroEvolutionPic {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+.gemCounterPic {
+	position: absolute;
+	left: 7%;
+	bottom: 92.5%;
+	width: 5%;
+	height: 6.5%;
+}
+.heroCounterPic {
+	position: absolute;
+	left: 7.5%;
+	bottom: 85%;
+	width: 4.5%;
+	height: 7%;
+}
+.gemNumber {
+	position: absolute;
+	width: auto;
+	left: 12.8%;
+	color: white;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.gemCounterNumber {
+	bottom: 93.7%;
+}
+.heroCounterNumber {
+	bottom: 87.5%;
+}
+.counterTag {
+	position: absolute;
+	left: 7.8%;
+	top: 0%;
+	width: 14.5%;
+	height: 16.9%;
+}
+
+
+
+.rollHeadline {
+	position: absolute;
+	width: auto;
+	bottom: 86%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	color: white;
+	text-align: center;
+	font-family: Baloo Bhai, sans-serif;
+}
+
+.rollAutoRollButton {
+	position: absolute;
+	left: 13.38%;
+	bottom: 10.7%;
+	width: 7%;
+	height: 12%;
+	transform: translate(-50%,50%);
+}
+.rollAutoRollButtonPic {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%,-50%);
+}
+
+.rollAutoRollMix {
+	position: absolute;
+	right: 9.88%;
+	bottom: 5.7%;
+	width: 11.5%;
+	height: 11%;
+}
+.gem {
+	position: absolute;
+	right: 17%;
+	bottom: 50%;
+	transform: translate(0%,40%);
+	width: 25%;
+	height: 50%;
+	
+}
+
+
+.rollAutoRollButton:active .rollAutoRollButtonPic {
+	width: 90%;
+	height: 90%;
+}
+
+.rollAutoRollMix:active .rollAutoRollButtonPic {
+	width: 90%;
+	height: 90%;
+}
+
+.rollAutoRollPic {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+.rollAutoRoll {
+	position: absolute;
+	bottom: 16%;
+	width: 11%;
+	height: 20.6%;
+	transform: translate(-50%,50%);
+	clip-path: polygon(32% 0, 67.3% 0, 67.3% 25%, 100% 42%, 100% 100%, 0 100%, 0 42%, 32% 25%);
+}
+.rollAutoRoll1 {left: 31.5%}
+.rollAutoRoll2 {left: 43.833%}
+.rollAutoRoll3 {left: 56.166%}
+.rollAutoRoll4 {left: 68.5%}
+.rollAutoRoll5 {left: 85%}
+
+.rollAutoRoll:active .rollAutoRollPic {
+	width: 85%;
+	height: 85%;
+}
+
+.imageOverlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.rollButton:active .rollButtonImage {
+	width: 80%;
+	height: 85%;
+}
+
+.settingsButton {
+	position: absolute;
+	right: 6.5%;
+	top: 2.25%;
+	width: 8%;
+	height: 11.5%;
+}
+
+
+
+
+
+.coverImageSpecial {
+	position: absolute;
+	right: 0%;
+	bottom: 50%;
+	transform: translate(0%,50%);
+	width: 10%;
+	height: 100%;
+}
+
+.buttonPress:active .coverImageSpecial {
+	width: 85%;
+	height: 85%;
+	/*transform: translate(-15%,50%);*/
+}
+
+.coverImage {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%,50%);
+	width: 100%;
+	height: 100%;
+}
+.buttonPress:active .coverImage {
+	width: 85%;
+	height: 85%;
+}
+
+.settingsButton:active .rollAutoRollButtonPic {
+	width: 85%;
+	height: 85%;
+}
+
+.mapHeadline {
+	position: absolute;
+	height: 13.5%;
+	top: 22%;
+	left: 20%;
+	transform: translate(-50%, 0%);
+	color: white;
+	font-family: Baloo Bhai, sans-serif;
+	text-align: center;
+	font-size: 31px;
+	text-shadow: 1.5px 0px 1.5px black, -1.5px 0px 1.5px black, 0px -0.75px 0.75px black, 0px 2px 2px black; 
+}
+
+.couponBackground {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 46%;
+	height: 10.5%;
+	top: 25%;
+	left: 53%
+}
+
+.mapButton {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 8.5%;
+	height: 13.5%;
+	top: 24.8%;
+}
+.mapButton1 {left: 35%}
+.mapButton2 {left: 44%}
+.mapButton3 {left: 53%}
+.mapButton4 {left: 62%}
+.mapButton5 {left: 71%}
+
+.mapArrow {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 4.75%;
+	height: 7.25%;
+	top: 25.25%;
+	left: 81.5%;
+}
+
+.mapButtonPic {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.mapButtonPicOn {
+	width: 105%;
+	height: 105%;
+}
+
+.mapArrow:active .coverImage {
+	width: 90%;
+	height: 90%;
+}
+.mapButton:active .coverImage {
+	width: 90%;
+	height: 90%;
+}
+
+.languageButton {
+	position: absolute;
+	width: 18.5%;
+	height: 11%;
+	bottom: 44.9%;
+	left: 12.35%
+}
+
+.languageButton:active .mapButtonPic {
+	width: 95%;
+	height: 95%;
+}
+
+.evolutionButtonHeadline {
+	position: absolute;
+	height: 12%;
+	bottom: 41.5%;
+	left: 54.5%;
+	color: #F9D97B;
+	font-family: Baloo Bhai, sans-serif;
+	font-size: 42px;
+	text-shadow: 1.5px 0px 1.5px black, -2px 0px 2px black, 0px -0.75px 0.75px black, 0px 4px 4px black;
+}
+.evolutionButton {
+	position: absolute;
+	right: 23%;
+	width: 20%;
+	height: 10.5%;
+	bottom: 44.5%;
+}
+.soundState:active .mapButtonPic {
+	width: 90%;
+	height: 90%;
+}
+
+.heroesOptionButton {
+	position: absolute;
+	width: 15%;
+	height: 10%;
+	top: 58%;
+	left: 15%
+}
+.heroesOptionButton:active .mapButtonPic {
+	width: 90%;
+	height: 90%;
+}
+.heroesOptionInfoClass {
+	position: absolute;
+	width: 30%;
+	height: 12%;
+	top: 70%;
+	left: 12%;
+	color: #584930;
+	font-family: Baloo Bhai, sans-serif;
+	font-size: 27px;
+}
+
+.heroesOddsInfo {
+	position: absolute;
+	height: 12%;
+	bottom: 28%;
+	left: 49%;
+	color: #584930;
+	font-family: Baloo Bhai, sans-serif;
+	font-size: 32px;
+}
+
+.heroesOdds {
+	position: absolute;
+	transform: translate(-50%;50%);
+	bottom: 21%;
+	width: 7.5%;
+	height: 12%;
+}
+.heroesOdds1 {left: 47.5%}
+.heroesOdds2 {left: 55.5%}
+.heroesOdds3 {left: 63.5%}
+.heroesOdds4 {left: 71.5%}
+.heroesOdds5 {left: 79.5%}
+
+.heroesOdds:active .rollAutoRollPic {
+	width: 90%;
+	height: 90%;
+}
+
+.iggInfo {
+	position: absolute;
+	height: 15%;
+	top: 82.5%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	color: #514F4B;
+	font-family: Baloo Bhai, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	line-height: 110%;
+}
+
+.soundButton {
+	position: absolute;
+	width: 5.1%;
+	height: 6.3%;
+	top: 34.5%;
+}
+.soundMusic {left: 23.5%}
+.soundEffect {left: 53.2%}
+
+.soundState {
+	position: absolute;
+	width: 17%;
+	height: 10%;
+}
+.soundState1 {left: 29.6%; top: 33.1%}
+.soundState2 {left: 59.4%; top: 33.1%}
+.soundState3 {left: 70%; top: 45%}
+.soundState4 {left: 13%; top: 58.5%}
+
+.soundState:active .rollAutoRollPic {
+	width: 90%;
+	height: 90%;
+}
+
+
+.testNameButton1 {
+	position: absolute;
+	width: auto;
+	height: 10%;
+	top: 33%;
+	left: 50%;
+	transform: translate(-50%,0%);
+}
+.testNameButton {
+	position: absolute;
+	width: 15%;
+	height: 10%;
+	top: 58%;
+	left: 15%
+}
+.testName {
+	position: absolute;
+	width: auto;
+	transform: translate(-50%,50%);
+	color: white;
+	text-align: center;
+	left: 50.25%;
+	bottom: 57%;
+	font-size: 46px;
+	text-shadow: 1.5px 0px 1.5px black, -1.5px 0px 1.5px black, 0px -0.75px 0.75px black, 0px 3px 3px black, 0px 6px black, 0px 6px 6px black;
+	font-family: Baloo Bhai, sans-serif;
+	/* English Font:
+	left: 50.5%;
+	bottom: 54.5%;
+	font-size: 38px;
+	text-shadow: 1.5px 0px 1.5px black, -1.5px 0px 1.5px black, 0px -0.75px 0.75px black, 0px 2px 2px black; 
+	font-family: Verdana, Geneva, sans-serif;
+	*/
+}
+.testImage {
+	position: absolute;
+	width: 18%;
+	height: 65%;
+	bottom: 25%;
+	right: 9%
+}
+/* ---------------------------------------------------------------------- */
+
+.RingAnimation {
+	animation-duration: 0.625s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.Ring1Animation {
+	animation-name: Ring1Animation;
+}
+.Ring2Animation {
+	animation-name: Ring2Animation;
+}
+.Ring3Animation {
+	animation-name: Ring3Animation;
+}
+.Ring4Animation {
+	animation-name: Ring4Animation;
+}
+.Ring5Animation {
+	animation-name: Ring5Animation;
+}
+.Ring6Animation {
+	animation-name: Ring6Animation;
+}
+.Ring7Animation {
+	animation-name: Ring7Animation;
+}
+.Ring8Animation {
+	animation-name: Ring8Animation;
+}
+.Ring9Animation {
+	animation-name: Ring9Animation;
+}
+.Ring10Animation {
+	animation-name: Ring10Animation;
+}
+
+.SpawnAnimation {
+	animation: herospawn 1.4s linear 0.35s;
+}
+.LightRingAnimation {
+	animation: LightRing 1.3s linear 0.7s;
+	animation-Fill-Mode: forwards;
+}
+.LightAnimation {
+	animation: Light 0.5s linear 0.35s;
+	animation-Fill-Mode: forwards;
+}
+.LightStripesAnimation {
+	animation: LightStripes 0.6s linear 0.4s;
+	animation-Fill-Mode: forwards;
+}
+.LightStarsAnimation {
+	animation: LightStars 2s linear;
+	animation-Fill-Mode: forwards;
+}
+.purpleLightAnimation {
+	animation: purpleLight 0.85s linear;
+	animation-Fill-Mode: forwards;
+}
+.purpleLightCircleAnimation {
+	animation: purpleLightCircle 0.5s linear;
+	animation-Fill-Mode: forwards;
+}
+.purpleLightBarAnimation {
+	animation: purpleLightBar 0.3s linear;
+	animation-Fill-Mode: forwards;
+}
+.purpleLightStarsAnimation {
+	animation: purpleLightStars 0.8s linear;
+}
+.purpleLightRingAnimation {
+	animation: purpleLightRing 1.3s linear 0.4s;
+	animation-Fill-Mode: forwards;
+}
+/* A N I M A T I O N S */
+
+/* animation for the background light stripes behind legendary heroes */
+@keyframes purpleLightRing {
+    0%		{opacity: 0}
+	60%		{opacity: 0.5}
+    100%	{opacity: 0}
+}
+
+/* animation for light Stars flying away from the middle while legendary hero spawn */
+@keyframes purpleLightStars {
+	0%		{opacity: 0.9; left: 44%; bottom: 42%}
+	75% 	{opacity: 0.9}
+	100%	{opacity: 0; width: 10%}
+}
+
+/* animation for light bars flying to the middle while legendary hero spawn */
+@keyframes purpleLightBar {
+	0%		{opacity: 0}
+	10% 	{opacity: 0.85}
+	90% 	{opacity: 0.85}
+	100%	{opacity: 0; left: 47%; bottom: 35%}
+}
+
+/* animation for light getting bigger behind legendary hero */
+@keyframes purpleLightCircle {
+	0%	{opacity: 1; left: 0%; bottom: 0%; width: 100%; height: 100%;}
+	50% {opacity: 0.6}
+	100%	{opacity: 0; left: -17.5%; bottom: -15.8%; width: 135%; height: 133%;}
+}
+
+/* animation for light behind legendary hero */
+@keyframes purpleLight {
+	0%		{opacity: 1}
+	50%		{opacity: 1}
+	100%	{opacity: 0}
+}
+
+/* animation for light stars behind hero */
+@keyframes LightStars {
+	0%		{opacity: 0; transform: translate(0%,0%)} 
+	5%		{opacity: 0.9}
+	80%		{opacity: 0.9}
+	100%	{opacity: 0; transform: translate(0%,-800%)}
+}
+
+/* animation for light stripe fadeout */
+@keyframes LightStripes {
+	0%		{opacity: 1; left: 0%; width: 100%; height: 100%; bottom: 0%}
+	100%	{opacity: 0; left: -5%; width: 110%; height: 200%; bottom: 0%}
+}
+
+/* animation for light flash before hero spawn */
+@keyframes Light {
+	0%		{opacity: 0}
+	40%		{opacity: 0.8}
+	50%		{opacity: 0.8}
+	100%	{opacity: 0}
+}
+
+/* animations for ring before hero spawn */
+@keyframes Ring1Animation {
+	0%		{opacity: 1}
+	6.25%	{opacity: 1}
+	6.26%	{opacity: 0}
+	100%	{opacity: 0}
+}
+@keyframes Ring2Animation {
+	6.24%	{opacity: 0}
+	6.25%	{opacity: 1}
+	12.5%	{opacity: 1}
+	12.51%	{opacity: 0}	
+}
+@keyframes Ring3Animation {
+	12.49%	{opacity: 0}
+	12.5%	{opacity: 1}
+	18.75%	{opacity: 1}
+	18.76%	{opacity: 0}	
+}
+@keyframes Ring4Animation {
+	18.74%	{opacity: 0}
+	18.75%	{opacity: 1}
+	25%		{opacity: 1}
+	25.01%	{opacity: 0}	
+}
+@keyframes Ring5Animation {
+	24.99%	{opacity: 0}
+	25%		{opacity: 1}
+	31.25%	{opacity: 1}
+	31.26%	{opacity: 0}	
+}
+@keyframes Ring6Animation {
+	31.24%	{opacity: 0}
+	31.25%	{opacity: 1}
+	37.5%	{opacity: 1}
+	37.51%	{opacity: 0}	
+}
+@keyframes Ring7Animation {
+	37.49%	{opacity: 0}
+	37.5%	{opacity: 1}
+	43.75%	{opacity: 1}
+	43.76%	{opacity: 0}	
+}
+@keyframes Ring8Animation {
+	43.74%	{opacity: 0}
+	43.75%	{opacity: 1}
+	50%		{opacity: 1}
+	50.01%	{opacity: 0}	
+}
+@keyframes Ring9Animation {
+	49.99%	{opacity: 0}
+	50%		{opacity: 1}
+	56.25%	{opacity: 1}
+	56.26%	{opacity: 0}	
+}
+@keyframes Ring10Animation {
+	56.24%	{opacity: 0}
+	56.25%	{opacity: 1}
+	62.5%	{opacity: 1}
+	93.75%	{opacity: 0.75}
+	100%	{opacity: 0}
+}
+
+/* animation for hero spawn */ /* ( / 4) */
+@keyframes herospawn {
+	0%		{left: 25%; width: 50%; height: 50%; opacity: 0.1} 
+	10.375%	{left: 2%; width: 94%; height: 89%; opacity: 0.3}
+	18.75%	{opacity: 1}
+	25%		{left: 2%; width: 94%; height: 89%; opacity: 1}
+	100%	{left: 2%; width: 94%; height: 89%; opacity: 1}
+}
+
+/* animation for the rotating background light behind heroes */
+@keyframes LightRing {
+    0%		{transform: rotate(0deg); opacity: 0;}
+	37%		{opacity: 0.9;}
+    100%	{transform: rotate(90deg); opacity: 0;}
+}

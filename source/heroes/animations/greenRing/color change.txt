@@ -1,0 +1,2 @@
+sättigung: -85;
+helligkeit: -4;

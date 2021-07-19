@@ -1,0 +1,13 @@
+C L A S S
+elite: 60%;
+sacrifice: 25%;
+ordinary: 10%;
+legendary: 5%;
+
+S A C R I F I C E    C L A S S
+slime: 85%;
+gallert champion: 15%;
+
+L E G E N D A R Y    C L A S S
+shard: 75%;
+gem: 25%;
