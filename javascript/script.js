@@ -309,7 +309,7 @@ function evolutionFunction() {
 
 function languageChange() {
 	if (language == "english") {
-		document.getElementById("languageButton").src = "source/settings/languageGerman.png";
+		document.getElementById("languageButton").src = "source/settings/language_german.png";
 		language = "german";
 	} else {
 		document.getElementById("languageButton").src = "source/settings/language_english.png";
@@ -493,7 +493,7 @@ function languageFunction() {
 		document.getElementById("rollHeadline").innerHTML = settingsHeadline;
 	}
 	// language image
-	document.getElementById("languageButton").src = "source/settings/language" + language + ".png";
+	document.getElementById("languageButton").src = "source/settings/language_" + language + ".png";
 	// current hero name change
 	for (var ii = 1; ii < 4; ii++) {
 		var element = document.getElementById("box" + ii + "heroName").innerHTML;
@@ -1534,7 +1534,7 @@ function rollAutoRollFunction() {
 	} else {
 		rollButtonWindow.style.display = "none";
 		autoRollWindow.style.display = "block";
-		rollAutoRollButtonPic.src = "source/background/autorollOn.png";
+		rollAutoRollButtonPic.src = "source/background/autoRollOn.png";
 		autoRollState = true;
 		// unhighlight tab
 		if (tabCurrent != 0) {
@@ -1754,14 +1754,14 @@ function heroCardDetail(heroName, heroClassSpecial) {
 		var heroNameSpecial = "'" + heroName + "'";
 		storageHeroName.innerHTML +=
 		'<div id="storageHeroEvolutionDiv" class="storageHeroEvolution storageHeroEvolutionZIndex buttonPress" onclick="heroCardEvolution(' + heroNameSpecial + ')">' +
-			'<img id="storageHeroEvolution" class="coverImage" src="source/background/Evolution1.png" alt="Evolution1.error" style="z-index: -3"' + '<br>' +
+			'<img id="storageHeroEvolution" class="coverImage" src="source/background/evolution1.png" alt="Evolution1.error" style="z-index: -3"' + '<br>' +
 			'<div class="coverImage" style="z-index: -2"</div>' + '<br>' +
 		'</div>';
 		document.getElementById("storageHeroEvolutionDiv").style.width = (document.getElementById("storageHeroEvolution").offsetHeight * 0.88) + "px";
 		if (heroCardEvo == true) {
 			var id = "storageHeroEvolution";
 			var storageHeroEvolution = document.getElementById(id);
-			storageHeroEvolution.src = "source/background/Evolution2.png";
+			storageHeroEvolution.src = "source/background/evolution2.png";
 		}
 	}
 	// image change
