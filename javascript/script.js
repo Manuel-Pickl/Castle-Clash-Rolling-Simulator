@@ -493,7 +493,7 @@ function languageFunction() {
 		document.getElementById("rollHeadline").innerHTML = settingsHeadline;
 	}
 	// language image
-	document.getElementById("languageButton").src = "source/settings/language_" + language + ".png";
+	document.getElementById("languageButton").src = `source/settings/language_${language}.png`;
 	// current hero name change
 	for (var ii = 1; ii < 4; ii++) {
 		var element = document.getElementById("box" + ii + "heroName").innerHTML;
