@@ -312,7 +312,7 @@ function languageChange() {
 		document.getElementById("languageButton").src = "source/settings/languageGerman.png";
 		language = "german";
 	} else {
-		document.getElementById("languageButton").src = "source/settings/languageEnglish.png";
+		document.getElementById("languageButton").src = "source/settings/language_english.png";
 		language = "english";
 	}
 	languageFunction();
@@ -1527,7 +1527,7 @@ function rollAutoRollFunction() {
 	if (autoRollState == true) {
 		rollButtonWindow.style.display = "block";
 		autoRollWindow.style.display = "none";
-		rollAutoRollButtonPic.src = "source/background/autorollOff.png";
+		rollAutoRollButtonPic.src = "source/background/autoRollOff.png";
 		autoRollState = false;
 		clearInterval(autoRollInterval);
 	// enable auto roll

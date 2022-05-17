@@ -666,7 +666,6 @@ body {
 
 .heroesOdds {
 	position: absolute;
-	transform: translate(-50%;50%);
 	bottom: 21%;
 	width: 7.5%;
 	height: 12%;
