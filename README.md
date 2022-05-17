@@ -1,4 +1,4 @@
-# [Castle-Clash-Rolling-Simulator](https://hanshar.github.io/Castle-Clash-Rolling-Simulator/)
+# [Castle-Clash-Rolling-Simulator](https://manuel-pickl.github.io/Castle-Clash-Rolling-Simulator/)
 A Casino like Simulator for Rolling Heroes in the Game Castle Clash.
 
 The Project is based on the mobile game [Castle Clash](https://play.google.com/store/apps/details?id=com.igg.castleclash).
