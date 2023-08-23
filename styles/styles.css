@@ -851,6 +851,7 @@ body {
 
 .SpawnAnimation {
 	animation: herospawn 1.4s linear 0.35s;
+	animation-fill-mode: forwards
 }
 .LightRingAnimation {
 	animation: LightRing 1.3s linear 0.7s;

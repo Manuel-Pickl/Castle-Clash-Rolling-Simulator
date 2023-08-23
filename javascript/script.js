@@ -2688,44 +2688,27 @@ function animationSpawn(number) {
 	var id, boxheropic;
 	switch(number) {
 		case 3:
-			id = "box1" + hero1;
-			boxhero = document.getElementById(id);
+			boxhero = document.getElementById("box1HeroImage");
+			boxhero.src = `source/heroes/heroesNormal/${hero1}.png`;
+			boxhero.alt = `${hero1}.error`;
 			boxhero.style.animationPlayState = "running";
 			boxhero.className += " SpawnAnimation";
-			id = "box3" + hero3;
-			boxhero = document.getElementById(id);
+			
+			boxhero = document.getElementById("box3HeroImage");
+			boxhero.src = `source/heroes/heroesNormal/${hero3}.png`;
+			boxhero.alt = `${hero3}.error`;
 			boxhero.style.animationPlayState = "running";
 			boxhero.className += " SpawnAnimation";
 		case 1:
-			id = "box2" + hero2;
-			boxhero = document.getElementById(id);
+			boxhero = document.getElementById("box2HeroImage");
+			boxhero.src = `source/heroes/heroesNormal/${hero2}.png`;
+			boxhero.alt = `${hero2}.error`;
 			boxhero.style.animationPlayState = "running";
 			boxhero.className += " SpawnAnimation";
 			break;
 		default:
 			alert(animationSpawn.error);
 	}
-	var pause = setInterval(animationPause, 1200);
-	function animationPause() {
-		boxhero1 = document.getElementById("box1" + hero1);
-		boxhero2 = document.getElementById("box2" + hero2);
-		boxhero3 = document.getElementById("box3" + hero3);
-		opacityValue = window.getComputedStyle(boxhero2).getPropertyValue("opacity");
-		if (opacityValue == 1) {
-			switch (number) {
-				case 3:
-					boxhero1.style.animationPlayState = "paused";
-					boxhero3.style.animationPlayState = "paused";
-				case 1:
-					boxhero2.style.animationPlayState = "paused";
-					break;
-				default:
-					alert("animationPause.error");
-			}
-		}
-		clearInterval(pause);
-	}
-	
 }
 
 function animationSpawnReset() {
