@@ -1,3 +1,35 @@
+// script.js
+window.addEventListener("load", function () {
+    const loading = document.querySelector(".loading-screen");
+    const content = document.querySelector("#content");
+    const images = document.querySelectorAll("img");
+    const totalImages = images.length;
+    let loadedImages = 0;
+	
+    // Function to check if all images are loaded
+    function checkAllImagesLoaded() {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+            // All images are loaded
+            content.style.display = "block";
+			loading.style.display = "none";
+        }
+    }
+
+    // Preload images
+    images.forEach((img) => {
+        if (img.complete) {
+            checkAllImagesLoaded();
+        } else {
+            img.addEventListener("load", checkAllImagesLoaded);
+        }
+        img.addEventListener("error", checkAllImagesLoaded); // In case of an error loading the image
+    });
+});
+
+
+
+
 var currentVolume = 0;
 function musicFunction(mapNumber) {
 	for (var i = 1; i < 8; i++) {
@@ -1253,33 +1285,12 @@ function keepRatio() {
 	ccWindow.style.height =  window.innerHeight + "px";
 	ccWindow.style.width = (ccWindow.offsetHeight * ratio) + "px";
 	
-	var blackB = 0;
 	if (ccWindow.offsetWidth > ((window.innerWidth - 16.5286) * 0.838)) {
 		ccWindow.style.width = ((window.innerWidth - 16.5286) * 0.838) + "px";
 		ccWindow.style.height =  (ccWindow.offsetWidth / ratio) + "px";
-		blackB = 1;
 	}
 	ccWindow.style.left = (((window.innerWidth - 16.5286) - ccWindow.offsetWidth) / 2) + "px";
-	
-	ccWindow2.style.height = ccWindow.offsetHeight + "px";
-	ccWindow2.style.width = "100%";
-	ccWindow2.style.left = 0;
-	ccWindow3.style.left = 0;
-	if (ccWindow2.offsetWidth > 1.75 * ccWindow.offsetWidth) {
-		ccWindow2.style.width = (1.75 * ccWindow.offsetWidth) + "px";
-		ccWindow2.style.left = (((window.innerWidth - 16.5286) - ccWindow2.offsetWidth) / 2) + "px";
-		ccWindow3.style.left = (((window.innerWidth - 16.5286) - ccWindow2.offsetWidth) / 2) + "px";
-	}
-	if (blackB == 1) {
-		ccWindow2.style.width = "0px";
-		var bodyVar = document.body;
-		bodyVar.style.background = "url(source/background/background.jpg) no-repeat center fixed";
-		bodyVar.style.backgroundSize = "cover";
-	} else {
-		var bodyVar = document.body;
-		bodyVar.style.background = "black";
-		bodyVar.style.backgroundSize = "cover";
-	}
+		
 	ccWindow3.style.height = ccWindow2.offsetHeight + "px";
 	ccWindow3.style.width = ccWindow2.offsetWidth + "px";
 	

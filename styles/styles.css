@@ -1,7 +1,7 @@
 body {
+	position: absolute;
+	inset: 0;
 	margin: 0;
-	background: black;
-    background-size: cover;
 }
 
 /* to include outline/border/paddding/content in width */
@@ -13,6 +13,56 @@ body {
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 
+}
+
+.loading-screen {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	background-color: black;
+}
+.loading-screen>div {
+	z-index: 1000;
+}
+.loading-screen span {
+	font-family: Baloo Bhai, sans-serif;
+	color: white;
+	font-size: 70px;
+}
+
+.loading-screen .loader {
+	--loader-size: 90px;
+	--loader-stroke: 14px;
+	--loader-color: white;
+	border: var(--loader-stroke) solid var(--loader-color);
+	border-top: var(--loader-stroke) solid transparent;
+	border-radius: 50%;
+	width: var(--loader-size);
+	height: var(--loader-size);
+	animation: spin 1s linear infinite;
+	margin: 20px auto;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.loading-screen img {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	filter: blur(6px) brightness(0.7);
+	z-index: 100;
+}
+
+
+#content {
+	position: absolute;
+	inset: 0;
+	display: none;
 }
 
 #all {
