@@ -28,12 +28,13 @@ body {
 .loading-screen span {
 	font-family: Baloo Bhai, sans-serif;
 	color: white;
-	font-size: 70px;
+	font-size: 60px;
+	text-shadow: 1.5px 0px 1.5px black, -2px 0px 2px black, 0px -0.75px 0.75px black, 0px 4px 4px black;
 }
 
 .loading-screen .loader {
-	--loader-size: 90px;
-	--loader-stroke: 14px;
+	--loader-size: 70px;
+	--loader-stroke: 12px;
 	--loader-color: white;
 	border: var(--loader-stroke) solid var(--loader-color);
 	border-top: var(--loader-stroke) solid transparent;
@@ -768,48 +769,6 @@ body {
 	height: 90%;
 }
 
-
-.testNameButton1 {
-	position: absolute;
-	width: auto;
-	height: 10%;
-	top: 33%;
-	left: 50%;
-	transform: translate(-50%,0%);
-}
-.testNameButton {
-	position: absolute;
-	width: 15%;
-	height: 10%;
-	top: 58%;
-	left: 15%
-}
-.testName {
-	position: absolute;
-	width: auto;
-	transform: translate(-50%,50%);
-	color: white;
-	text-align: center;
-	left: 50.25%;
-	bottom: 57%;
-	font-size: 46px;
-	text-shadow: 1.5px 0px 1.5px black, -1.5px 0px 1.5px black, 0px -0.75px 0.75px black, 0px 3px 3px black, 0px 6px black, 0px 6px 6px black;
-	font-family: Baloo Bhai, sans-serif;
-	/* English Font:
-	left: 50.5%;
-	bottom: 54.5%;
-	font-size: 38px;
-	text-shadow: 1.5px 0px 1.5px black, -1.5px 0px 1.5px black, 0px -0.75px 0.75px black, 0px 2px 2px black; 
-	font-family: Verdana, Geneva, sans-serif;
-	*/
-}
-.testImage {
-	position: absolute;
-	width: 18%;
-	height: 65%;
-	bottom: 25%;
-	right: 9%
-}
 /* ---------------------------------------------------------------------- */
 
 .RingAnimation {
