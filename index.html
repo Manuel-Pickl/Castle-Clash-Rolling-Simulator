@@ -5,10 +5,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Keywords" content="Castle Clash Rolling Simulator">
-<meta name="Description" content="Castle CLash Rolling Simulator">
+<meta name="Description" content="Castle Clash Rolling Simulator">
 <link rel="stylesheet" href="styles/styles.css">
 <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- pwa -->
+<link rel="shortcut icon" href="icons/favicon.ico" />
+<meta name="theme-color" content="#000000"/>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192x192.png"/>
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('service-worker.js');
+	  }
+</script>
 
 <!--
 

@@ -1,0 +1,35 @@
+{
+    "name": "Castle Clash Rolling Simulator",
+    "short_name": "CC Simulator",
+    "start_url": "/",
+    "theme_color": "#00000F",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
